@@ -21,7 +21,7 @@ def classify_age_gender(frame, age_model, gender_model):
 age_net = cv2.dnn.readNetFromCaffe("deploy_age.prototxt", "age_net.caffemodel")
 gender_net = cv2.dnn.readNetFromCaffe("deploy_gender.prototxt", "gender_net.caffemodel")
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0) # cap = cv2.VideoCapture("video.mp4")
 
 while True:
     ret, frame = cap.read()
